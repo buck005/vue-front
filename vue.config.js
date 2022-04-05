@@ -1,4 +1,7 @@
+const BASE_URL = process.env.NODE_ENV === "production" ? "/vue-front/dist" : "/";
 module.exports = {
+  publicPath: BASE_URL,
+  outputDir: "dist",
   devServer: {
     proxy: {
       "/vue-back": {

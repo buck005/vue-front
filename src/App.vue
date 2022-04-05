@@ -17,7 +17,7 @@ export default {
   },
   mounted() {
     console.log('mounted')
-    axios.get("http://localhost:3000/users").then((res) => {
+    axios.get("/vue-back/users").then((res) => {
       console.log(res)
       this.users = res.data;
     });
