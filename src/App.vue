@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <h3>hello</h3>
     <ul>
       <li v-for="user in users" :key="user.id">{{ user.name }}</li>
     </ul>
@@ -16,9 +17,9 @@ export default {
     };
   },
   mounted() {
-    console.log('mounted')
+    console.log("mounted");
     axios.get("/vue-back/users").then((res) => {
-      console.log(res)
+      console.log(res);
       this.users = res.data;
     });
   },
