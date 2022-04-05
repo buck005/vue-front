@@ -1,4 +1,4 @@
-const BASE_URL = process.env.NODE_ENV === "production" ? "/vue-front/dist" : "/";
+const BASE_URL = process.env.NODE_ENV === "production" ? "/dist" : "/";
 module.exports = {
   publicPath: BASE_URL,
   outputDir: "dist",
